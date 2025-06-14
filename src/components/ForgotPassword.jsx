@@ -3,8 +3,10 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
+import useTitle from "../hooks/useTitle";
 
 const ForgotPassword = () => {
+  useTitle("MarathonPro | ForgotPassword");
   const { resetPassword } = useContext(AuthContext);
   const location = useLocation();
 

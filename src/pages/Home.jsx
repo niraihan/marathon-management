@@ -4,8 +4,10 @@ import Marathons from './Marathons';
 import UpcomingMarathonsSection from './UpcomingMarathonsSection';
 import WhyJoinSection from './WhyJoinSection';
 import HowToPrepareSection from './HowToPrepareSection';
+import useTitle from '../hooks/useTitle';
 
 const Home = () => {
+    useTitle("MarathonPro | Home");
     return (
         <div className="text-center mt-10">
             <h1 className="text-3xl font-bold">Welcome to Marathon Management System</h1>
