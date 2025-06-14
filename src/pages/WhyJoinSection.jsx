@@ -5,7 +5,7 @@ const WhyJoinSection = () => {
     <div className="py-12 bg-base-200 px-4 lg:px-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <img
-          src="https://i.ibb.co/2sHxDHF/marathon-run.jpg"
+          src="https://i.ibb.co/ksRpJzzY/13.jpg"
           alt="Marathon Motivation"
           className="rounded-xl shadow-xl"
         />
