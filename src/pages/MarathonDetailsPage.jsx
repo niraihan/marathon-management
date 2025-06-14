@@ -68,7 +68,7 @@ const MarathonDetailsPage = () => {
             <p className="mb-2">
                 <strong>Marathon Start Date:</strong> {marathonStart.toLocaleDateString()}
             </p>
-            <p className="mb-4">{marathon.description}</p>
+            <p className="mb-4">Description:- {marathon.description}</p>
 
             <p className="mb-4">
                 <strong>Total Registration Count:</strong> {marathon.totalRegistrationCount}
