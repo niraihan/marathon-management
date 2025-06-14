@@ -14,7 +14,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const JWT_URL = "https://assignment11-server-dun.vercel.app/jwt";
-
+// https://assignment11-server-dun.vercel.app
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -30,7 +30,7 @@ const Register = () => {
     if (password.length < 6)
       return setError("Password must be at least 6 characters.");
 
-    setLoading(true);
+    // setLoading(true);
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {
@@ -53,7 +53,7 @@ const Register = () => {
         setError(err.message);
         Swal.fire("Error!", err.message, "error");
       })
-      .finally(() => setLoading(false));
+      // .finally(() => setLoading(false));
   };
 
   const handleGoogleLogin = () => {

@@ -87,6 +87,7 @@ const updateUserProfile = (name, photo) => {
     updateUserProfile,
     logOut,
     resetPassword,
+    
   };
 
   return <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>;

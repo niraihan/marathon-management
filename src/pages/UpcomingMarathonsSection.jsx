@@ -77,9 +77,9 @@ const UpcomingMarathonsSection = () => {
                 {new Date(m.registrationStart).toLocaleDateString()} –{" "}
                 {new Date(m.registrationEnd).toLocaleDateString()}
               </p>
-              <div className="card-actions justify-end">
+              {/* <div className="card-actions justify-end">
                 <button className="btn btn-outline btn-sm">See Details</button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
