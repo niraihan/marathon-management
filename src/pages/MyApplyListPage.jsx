@@ -13,7 +13,7 @@ const MyApplyListPage = () => {
   const fetchApplies = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/applies?search=${search}`,
+        `https://assignment11-server-dun.vercel.app/applies?search=${search}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("access-token")}`,
@@ -49,7 +49,7 @@ const MyApplyListPage = () => {
     });
     if (ok.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:5000/applies/${id}`, {
+        await axios.delete(`https://assignment11-server-dun.vercel.app/applies/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("access-token")}`,
           },

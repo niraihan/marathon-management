@@ -13,7 +13,7 @@ const Register = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const JWT_URL = "http://localhost:5000/jwt";
+  const JWT_URL = "https://assignment11-server-dun.vercel.app/jwt";
 
   const handleRegister = (e) => {
     e.preventDefault();

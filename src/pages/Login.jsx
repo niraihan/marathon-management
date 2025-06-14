@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
-  const JWT_URL = "http://localhost:5000/jwt";
+  const JWT_URL = "https://assignment11-server-dun.vercel.app/jwt";
 
   const handleLogin = (e) => {
     e.preventDefault();

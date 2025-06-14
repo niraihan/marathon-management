@@ -28,7 +28,7 @@ const AddMarathon = () => {
             organizerEmail: user?.email,
         };
 console.log(marathon)
-        fetch("http://localhost:5000/marathons", {
+        fetch("https://assignment11-server-dun.vercel.app/marathons", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

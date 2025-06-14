@@ -22,7 +22,7 @@ console.log(marathons)
   const fetchMyMarathons = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/mymarathons", {
+      const res = await fetch("https://assignment11-server-dun.vercel.app/mymarathons", {
         headers: {
           authorization: `Bearer ${localStorage.getItem("access-token")}`,
         },
@@ -56,7 +56,7 @@ console.log(marathons)
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/marathons/${id}`, {
+        fetch(`https://assignment11-server-dun.vercel.app/marathons/${id}`, {
           method: "DELETE",
           headers: {
             authorization: `Bearer ${localStorage.getItem("access-token")}`,
@@ -99,7 +99,7 @@ console.log(marathons)
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:5000/marathons/${editingMarathon._id}`, {
+    fetch(`https://assignment11-server-dun.vercel.app/marathons/${editingMarathon._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

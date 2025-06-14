@@ -25,7 +25,7 @@ const MarathonRegisterPage = () => {
     const fetchMarathon = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/marathons/${id}`,
+          `https://assignment11-server-dun.vercel.app/marathons/${id}`,
           {
             headers: {
               authorization: `Bearer ${localStorage.getItem("access-token")}`,
@@ -77,7 +77,7 @@ const MarathonRegisterPage = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/registrations", {
+      const res = await fetch("https://assignment11-server-dun.vercel.app/registrations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

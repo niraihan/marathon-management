@@ -5,7 +5,7 @@ const Marathons = () => {
   const [marathons, setMarathons] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/new-marathons?limit=6`)
+    fetch(`https://assignment11-server-dun.vercel.app/new-marathons?limit=6`)
       .then((res) => res.json())
       .then((data) => setMarathons(data));
   }, []);

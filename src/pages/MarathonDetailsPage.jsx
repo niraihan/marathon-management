@@ -12,7 +12,7 @@ const MarathonDetailsPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/marathons/${id}`, {
+        fetch(`https://assignment11-server-dun.vercel.app/marathons/${id}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem("access-token")}`,
             },

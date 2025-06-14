@@ -64,7 +64,7 @@ const updateUserProfile = (name, photo) => {
       // JWT Token
       if (currentUser) {
         axios
-          .post("http://localhost:5000/jwt", { email: currentUser.email })
+          .post("https://assignment11-server-dun.vercel.app/jwt", { email: currentUser.email })
           .then((res) => {
             localStorage.setItem("access-token", res.data.token);
             setLoading(false);
