@@ -6,7 +6,7 @@ const UpcomingMarathonsSection = () => {
       location: "Hatirjheel, Dhaka",
       registrationStart: "2025-06-20",
       registrationEnd: "2025-07-15",
-      imageUrl: "https://i.ibb.co/qj5TZgx/dhaka-marathon.jpg",
+      imageUrl: "https://i.ibb.co/W4tGnCNg/003.webp",
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ const UpcomingMarathonsSection = () => {
       location: "Cox’s Bazar Sea Beach",
       registrationStart: "2025-07-01",
       registrationEnd: "2025-07-30",
-      imageUrl: "https://i.ibb.co/Tb4Tht5/cox-marathon.jpg",
+      imageUrl: "https://i.ibb.co/BHNwJh5T/009.jpg",
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const UpcomingMarathonsSection = () => {
       location: "Sylhet City",
       registrationStart: "2025-07-10",
       registrationEnd: "2025-08-05",
-      imageUrl: "https://i.ibb.co/jyZ6kpT/sylhet-marathon.jpg",
+      imageUrl: "https://i.ibb.co/Gvh3Yg3J/007.jpg",
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const UpcomingMarathonsSection = () => {
       location: "Foy’s Lake, Chattogram",
       registrationStart: "2025-06-25",
       registrationEnd: "2025-07-20",
-      imageUrl: "https://i.ibb.co/Y3Wvb5w/chattogram-marathon.jpg",
+      imageUrl: "https://i.ibb.co/wNfZKXy3/004.jpg",
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ const UpcomingMarathonsSection = () => {
       location: "Rangpur Stadium",
       registrationStart: "2025-07-05",
       registrationEnd: "2025-08-01",
-      imageUrl: "https://i.ibb.co/58MCn2v/rangpur-night-run.jpg",
+      imageUrl: "https://i.ibb.co/G4YND3gz/images-1.jpg",
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ const UpcomingMarathonsSection = () => {
       location: "Rupsha Bridge Area, Khulna",
       registrationStart: "2025-06-18",
       registrationEnd: "2025-07-10",
-      imageUrl: "https://i.ibb.co/L6ZkJTZ/khulna-marathon.jpg",
+      imageUrl: "https://i.ibb.co/HfFvYfWd/khulna.jpg",
     },
   ];
 
