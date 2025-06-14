@@ -66,7 +66,7 @@ const MarathonRegisterPage = () => {
     const registrationData = {
       marathonId: marathon._id,
       marathonTitle: marathon.title,
-      marathonStartDate: marathon.marathonStartDate,
+      marathonDate: marathon.marathonDate,
       email: formData.email,
       firstName: formData.firstName,
       lastName: formData.lastName,

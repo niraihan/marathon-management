@@ -20,7 +20,7 @@ const Marathons = () => {
             <div className="card-body">
               <h2 className="card-title">{m.title}</h2>
               <p>📍 {m.location}</p>
-              <p> Marathon Date :- {m.marathonDate}</p>
+              <p> Marathon Start Date :- {new Date(m.marathonDate).toLocaleDateString()}</p>
               <div className="card-actions justify-end">
                 <Link to={`/marathons/${m._id}`} className="btn btn-sm btn-primary">See Details</Link>
               </div>

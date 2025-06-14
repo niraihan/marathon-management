@@ -36,7 +36,7 @@ console.log(marathon)
             },
             body: JSON.stringify(marathon),
         }).then(res => res.json()).then(data => {
-           Swal.fire("Success", "Marathon added successfully", "success");
+          Swal.fire("Success", "Marathon added successfully", "success");
                 form.reset();
         });
     };
