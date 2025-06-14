@@ -5,12 +5,13 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from '../../context/AuthContext';
-// import useTitle from '../../hook/useTitle';
+import useTitle from '../../hooks/useTitle';
+
 
 
 
 const UpdateProfile = () => {
-    // useTitle("Plants - UpdateProfile");
+    useTitle("MarathonPro - UpdateProfile");
 
   const { updateUserProfile, user } = useContext(AuthContext);
   const navigate = useNavigate();

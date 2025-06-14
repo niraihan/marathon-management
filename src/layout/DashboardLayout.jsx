@@ -1,9 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
 import { FaPlus, FaListAlt, FaClipboardList } from "react-icons/fa";
+import useTitle from "../hooks/useTitle";
 
 export default function DashboardLayout() {
+    useTitle("MarathonPro | Dashboard");
     return (
+        
         <div className="min-h-screen flex flex-col">
+            
             {/* Header */}
             <header className="bg-primary text-white text-center p-4 text-2xl font-bold shadow">
                 🏁 Marathon Dashboard

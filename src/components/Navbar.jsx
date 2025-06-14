@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-bold text-2xl text-green-600 ml-2">
           <FaRunning className="text-green-500" />
-          MarathonMS
+          MarathonPro
         </Link>
       </div>
 

@@ -3,8 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase.config";
+import useTitle from "../hooks/useTitle";
 
 const MarathonRegisterPage = () => {
+  useTitle("MarathonPro | Register");
   const { id } = useParams();
   const navigate = useNavigate();
   const [user] = useAuthState(auth);

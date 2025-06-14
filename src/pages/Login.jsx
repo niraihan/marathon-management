@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { AuthContext } from "../context/AuthContext";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useTitle from "../hooks/useTitle";
 
 const Login = () => {
+  useTitle("MarathonPro | LogIn");
   const { signIn, googleLogin } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");

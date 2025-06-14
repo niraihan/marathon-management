@@ -5,10 +5,12 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../context/AuthContext";
 import { motion } from "framer-motion";
+import useTitle from "../hooks/useTitle";
 
 const auth = getAuth(app);
 
 const Register = () => {
+  useTitle("MarathonPro | Register");
   const { setLoading, googleLogin } = useContext(AuthContext);
   const [error, setError] = useState("");
   const navigate = useNavigate();

@@ -1,8 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useTitle from '../hooks/useTitle';
 
 const MarathonsPage = () => {
+  useTitle("MarathonPro | Marathon Page");
   const [marathons, setMarathons] = useState([]);
   const [loading, setLoading] = useState(true);
 

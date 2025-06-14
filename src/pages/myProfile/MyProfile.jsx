@@ -4,12 +4,12 @@ import { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import { AuthContext } from '../../context/AuthContext';
+import useTitle from '../../hooks/useTitle';
 
-// import useTitle from '../../hook/useTitle';
 
 
 const MyProfile = () => {
-    // useTitle("Plants - MyProfile");
+    useTitle("MarathonPro | MyProfile");
 
     const { user, logOut } = useContext(AuthContext);
 
