@@ -90,10 +90,10 @@ const MyApplyListPage = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(
+      await axios.patch(
         `https://assignment11-server-dun.vercel.app/applies/${currentApp._id}`,
         {
-          contactNumber: formData.contactNumber, // শুধু contactNumber পাঠানো হচ্ছে
+          contactNumber: formData.contactNumber, //  শুধু contactNumber পাঠানো হচ্ছে
         },
         {
           headers: {
