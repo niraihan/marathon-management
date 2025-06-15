@@ -17,7 +17,7 @@ const WhyJoinSection = () => {
 
         {/* Right Text */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-primary">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-500">
             Why Join a Marathon?
           </h2>
           <p className="text-lg text-gray-600">

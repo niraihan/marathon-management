@@ -18,7 +18,7 @@ const Marathons = () => {
         Latest Marathons
       </h2>
 
-      {/* ✅ লোডিং স্পিনার */}
+      {/*  লোডিং স্পিনার */}
       {loading ? (
         <div className="flex justify-center items-center h-60">
           <span className="loading loading-spinner text-primary w-16 h-16"></span>
