@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../context/AuthContext";
 import { motion } from "framer-motion";
 import useTitle from "../hooks/useTitle";
-
+import { FcGoogle } from "react-icons/fc";
 const auth = getAuth(app);
 
 const Register = () => {
@@ -140,7 +140,7 @@ const Register = () => {
             onClick={handleGoogleLogin}
             className="btn w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold"
           >
-            Register with Google
+           <FcGoogle />  Register with Google
           </motion.button>
 
           <p className="text-center text-sm mt-2 text-zinc-600">

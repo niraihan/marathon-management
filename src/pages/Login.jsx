@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useTitle from "../hooks/useTitle";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   useTitle("MarathonPro | LogIn");
@@ -118,7 +119,7 @@ const Login = () => {
             onClick={handleGoogleLogin}
             className="btn w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold"
           >
-            Login with Google
+           <FcGoogle /> Login with Google
           </motion.button>
 
           <p className="text-center text-sm mt-2 text-zinc-600">
