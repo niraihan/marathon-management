@@ -50,7 +50,7 @@ const Marathons = () => {
                 {/* Card body */}
                 <div className="card-body">
                   <h3 className="card-title text-lg font-bold">{m.title}</h3>
-                  <h5 className="badge badge-outline">Registration Last Date:-{new Date(m.endRegistrationDate).toLocaleDateString()}</h5>
+                  <h5 className="badge badge-outline">Reg:-{new Date(m.startRegistrationDate).toLocaleDateString()} - {new Date(m.endRegistrationDate).toLocaleDateString()}</h5>
                   <div className="flex flex-wrap gap-2 text-sm">
                     <span className="badge badge-ghost gap-1">📍 {m.location}</span>
                     {m.distance && (
