@@ -14,7 +14,7 @@ const UpcomingMarathonsSection = () => {
       location: "Cox’s Bazar Sea Beach",
       registrationStart: "2025-07-01",
       registrationEnd: "2025-07-30",
-      imageUrl: "https://i.ibb.co/BHNwJh5T/009.jpg",
+      imageUrl: "https://i.ibb.co/vCYH8VHH/03.jpg",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const UpcomingMarathonsSection = () => {
       location: "Foy’s Lake, Chattogram",
       registrationStart: "2025-06-25",
       registrationEnd: "2025-07-20",
-      imageUrl: "https://i.ibb.co/wNfZKXy3/004.jpg",
+      imageUrl: "https://i.ibb.co/Fk3Wcg72/chad-stembridge-ynym-ft-LYd-E-unsplash.jpg",
     },
     {
       id: 5,

@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    img: "https://i.ibb.co/5xvrxqsp/01.jpg",
+    img: "https://i.ibb.co/TqpjK8Ks/steward-masweneng-QITAa-HY1vo-Y-unsplash.jpg",
     title: "Join the Ultimate Marathon",
     desc: "Push your limits and run with passion. Be a part of history!",
     btnText: "Register Now",
@@ -24,7 +24,7 @@ const slides = [
   },
   {
     id: 3,
-    img: "https://i.ibb.co/vCYH8VHH/03.jpg",
+    img: "https://i.ibb.co/84NHN78v/steven-lelham-at-Sa-EOe-E8-Nk-unsplash.jpg.jpg",
     title: "Be a Champion, Run Today",
     desc: "Don’t just run, inspire others. Start your journey now.",
     btnText: "Join Now",
