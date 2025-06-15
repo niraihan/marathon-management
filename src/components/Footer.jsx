@@ -11,7 +11,7 @@ const Footer = () => {
           <h2 className="text-2xl font-bold flex items-center gap-2">🏁 MarathonPro</h2>
           <p className="text-sm mt-2">
             Your trusted marathon event management platform.<br />
-            © 2025 All Rights Reserved.
+            © 2025 All Rights Reserved. <br /> <span className="text-gray-700">Developed by [Nurul Islam Rayhan] </span>
           </p>
         </div>
 
