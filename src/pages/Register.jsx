@@ -16,7 +16,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const JWT_URL = "https://assignment11-server-dun.vercel.app/jwt";
-// https://assignment11-server-dun.vercel.app
+  // https://assignment11-server-dun.vercel.app
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -25,12 +25,22 @@ const Register = () => {
     const password = form.password.value;
     const photoURL = form.photoURL.value;
 
-    if (!/(?=.*[A-Z])/.test(password))
-      return setError("Password must contain an uppercase letter.");
-    if (!/(?=.*[a-z])/.test(password))
-      return setError("Password must contain a lowercase letter.");
-    if (password.length < 6)
-      return setError("Password must be at least 6 characters.");
+    if (!/(?=.*[A-Z])/.test(password)) {
+      return setError("Password must contain at least one uppercase letter.");
+    }
+
+    if (!/(?=.*[a-z])/.test(password)) {
+      return setError("Password must contain at least one lowercase letter.");
+    }
+
+    if (!/(?=.*[0-9])/.test(password)) {
+      return setError("Password must contain at least one number.");
+    }
+
+    if (password.length < 6) {
+      return setError("Password must be at least 6 characters long.");
+    }
+
 
     // setLoading(true);
 
@@ -55,7 +65,7 @@ const Register = () => {
         setError(err.message);
         Swal.fire("Error!", err.message, "error");
       })
-      // .finally(() => setLoading(false));
+    // .finally(() => setLoading(false));
   };
 
   const handleGoogleLogin = () => {
@@ -140,7 +150,7 @@ const Register = () => {
             onClick={handleGoogleLogin}
             className="btn w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold"
           >
-           <FcGoogle />  Register with Google
+            <FcGoogle />  Register with Google
           </motion.button>
 
           <p className="text-center text-sm mt-2 text-zinc-600">

@@ -9,7 +9,7 @@ import { AuthContext } from '../context/AuthContext';
 import useTitle from '../hooks/useTitle';
 
 const AddMarathon = () => {
-    useTitle("MarathonPro - Add Marathon");
+    useTitle("MarathonPro|Add Marathon");
     const { user } = useContext(AuthContext);
     const [startReg, setStartReg] = useState(new Date());
     const [endReg, setEndReg] = useState(new Date());

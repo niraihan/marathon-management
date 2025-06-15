@@ -148,8 +148,7 @@ console.log(marathons)
                   <td>{m.location}</td>
                   <td>{new Date(m.startRegistrationDate).toLocaleDateString()}</td>
                   <td>{new Date(m.endRegistrationDate).toLocaleDateString()}</td>
-                  <td>{new Date(m.marathonDate
-).toLocaleDateString()}</td>
+                  <td>{new Date(m.marathonDate).toLocaleDateString()}</td>
                   <td>{m.distance}</td>
                   <td className="space-x-2">
                     <button className="btn btn-sm btn-warning" onClick={() => openEditModal(m)}>Update</button>

@@ -59,7 +59,7 @@ const MarathonDetailsPage = () => {
                 <strong>Location:</strong> {marathon.location}
             </p>
             <p className="mb-2">
-                <strong>Running Distance:</strong> {marathon.runningDistance}
+                <strong>Running Distance:</strong> {marathon.distance}
             </p>
             <p className="mb-2">
                 <strong>Registration Dates:</strong>{" "}

@@ -1,3 +1,4 @@
+import { FaRunning } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import useTitle from "../hook/useTitle";
 
@@ -15,7 +16,7 @@ const NotFound = () => {
         Oops! The plant you're looking for doesn't exist in our garden.
       </p>
       <Link to="/">
-        <button className="btn btn-success text-white">🌿 Back to Home</button>
+        <button className="btn btn-success text-white"><FaRunning className="text-red-500" /> Back to Home</button>
       </Link>
     </div>
   );
