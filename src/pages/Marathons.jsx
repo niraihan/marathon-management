@@ -38,7 +38,7 @@ const Marathons = () => {
                     alt={m.title}
                     className="h-48 w-full object-cover group-hover:scale-105 transition duration-300"
                   />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold text-white bg-primary bg-opacity-90">
+                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold text-white  bg-blue-500 bg-opacity-50">
                     {new Date(m.marathonDate).toLocaleDateString("en-GB", {
                       day: "2-digit",
                       month: "short",
@@ -50,6 +50,7 @@ const Marathons = () => {
                 {/* Card body */}
                 <div className="card-body">
                   <h3 className="card-title text-lg font-bold">{m.title}</h3>
+                  <h5 className="badge badge-outline">Registration Last Date:-{new Date(m.endRegistrationDate).toLocaleDateString()}</h5>
                   <div className="flex flex-wrap gap-2 text-sm">
                     <span className="badge badge-ghost gap-1">📍 {m.location}</span>
                     {m.distance && (
