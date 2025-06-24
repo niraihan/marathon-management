@@ -6,7 +6,7 @@ const Marathons = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://assignment11-server-dun.vercel.app/new-marathons?limit=6")
+    fetch(`https://assignment11-server-dun.vercel.app/new-marathons?limit=6`)
       .then((res) => res.json())
       .then((data) => setMarathons(data))
       .finally(() => setLoading(false));
@@ -17,6 +17,8 @@ const Marathons = () => {
       <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">
         Latest Marathons
       </h2>
+
+ 
 
       {/*  লোডিং স্পিনার */}
       {loading ? (

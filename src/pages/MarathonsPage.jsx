@@ -5,11 +5,11 @@ import useTitle from '../hooks/useTitle';
 
 const MarathonsPage = () => {
   useTitle("MarathonPro | Marathon Page");
+  const [sortOrder, setSortOrder] = useState("desc"); //এসাইনমেন্টে এইখানে ভুল কড়ে ছিলাম
   const [marathons, setMarathons] = useState([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
-    fetch("https://assignment11-server-dun.vercel.app/marathons", {
+    fetch(`https://assignment11-server-dun.vercel.app/marathons?sort=${sortOrder}`, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("access-token")}`,
       },
@@ -19,13 +19,26 @@ const MarathonsPage = () => {
         setMarathons(data);
         setLoading(false);
       });
-  }, []);
+  }, [sortOrder]);
 
   if (loading) return <div className="text-center mt-10">Loading...</div>;
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-6 text-center">All Marathons</h2>
+      {/* sort এইখানে ভুল করে ছি */}
+      <div className="text-center mb-6">
+        <label htmlFor="sort" className="mr-2 font-semibold">Sort by Date:</label>
+        <select
+          id="sort"
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+          className="select select-bordered w-40 inline-block"
+        >
+          <option value="desc">Newest First</option>
+          <option value="asc">Oldest First</option>
+        </select>
+      </div>
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {marathons.map(marathon => (
           <div key={marathon._id} className="card bg-base-100 shadow-xl">
