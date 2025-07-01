@@ -6,7 +6,7 @@ const Marathons = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://assignment11-server-dun.vercel.app/new-marathons?limit=6`)
+    fetch(`https://assignment11-server-dun.vercel.app/new-marathons?limit=8`)
       .then((res) => res.json())
       .then((data) => setMarathons(data))
       .finally(() => setLoading(false));
@@ -18,7 +18,7 @@ const Marathons = () => {
         Latest Marathons
       </h2>
 
- 
+
 
       {/*  লোডিং স্পিনার */}
       {loading ? (
@@ -27,7 +27,7 @@ const Marathons = () => {
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {marathons.map((m) => (
               <div
                 key={m._id}
@@ -59,6 +59,13 @@ const Marathons = () => {
                       <span className="badge badge-outline">Distance:-{m.distance}</span>
                     )}
                   </div>
+
+                  <p className="text-sm text-gray-700">
+                    {m.description.length > 80
+                      ? `${m.description.slice(0, 80)}...`
+                      : m.description}
+                  </p>
+
                   <div className="mt-auto">
                     <Link
                       to={`/marathons/${m._id}`}
@@ -73,7 +80,7 @@ const Marathons = () => {
           </div>
 
           {/* View All */}
-          {marathons.length >= 6 && (
+          {marathons.length >= 8 && (
             <div className="text-center mt-10">
               <Link to="/marathons" className="btn btn-outline btn-wide">
                 View All Marathons

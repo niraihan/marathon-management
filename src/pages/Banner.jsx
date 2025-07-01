@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -34,41 +33,43 @@ const slides = [
 
 const Banner = () => {
   return (
-    <Swiper
-      modules={[Autoplay, Navigation, Pagination]}
-      loop
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
-      navigation
-      pagination={{ clickable: true }}
-      className="w-full h-[300px] md:h-[400px] lg:h-[500px] mb-8"
-    >
-      {slides.map((s) => (
-        <SwiperSlide key={s.id}>
-          <div className="relative w-full h-full">
-            {/* মূল ব্যাকগ্রাউন্ড ইমেজ */}
-            <img
-              src={s.img}
-              alt={`slide-${s.id}`}
-              className="w-full h-full object-cover"
-            />
+    <div className="w-full h-[60vh] md:h-[65vh] lg:h-[70vh] overflow-hidden">
+      <Swiper
+        modules={[Autoplay, Navigation, Pagination]}
+        loop
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        navigation
+        pagination={{ clickable: true }}
+        className="w-full h-full"
+      >
+        {slides.map((s) => (
+          <SwiperSlide key={s.id}>
+            <div className="relative w-full h-full">
+              {/* Background Image */}
+              <img
+                src={s.img}
+                alt={`slide-${s.id}`}
+                className="w-full h-full object-cover"
+              />
 
-            {/* গ্রেডিয়েন্ট ওভারলে */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/60"></div>
 
-            {/* টেক্সট ও CTA */}
-            <div className="absolute  left-5 md:left-16 top-1/4 text-white space-y-4 max-w-md z-10">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold drop-shadow-lg">
-                {s.title}
-              </h2>
-              <p className="text-sm md:text-lg">{s.desc}</p>
-              {/* <a href="/register" className={`btn ${s.btnStyle}`}>
-                {s.btnText}
-              </a> */}
+              {/* Text & CTA */}
+              <div className="absolute left-5 md:left-16 top-1/3 transform -translate-y-1/3 text-white space-y-4 max-w-md z-10">
+                <h2 className="text-3xl md:text-5xl font-bold drop-shadow">
+                  {s.title}
+                </h2>
+                <p className="text-sm md:text-lg">{s.desc}</p>
+                {/* <a href="/register" className={`btn ${s.btnStyle}`}>
+                  {s.btnText}
+                </a> */}
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 

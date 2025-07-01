@@ -17,6 +17,9 @@ import NotFound from '../pages/NotFound';
 import MyProfile from '../pages/myProfile/MyProfile';
 import UpdateProfile from '../pages/myProfile/UpdateProfile';
 import ForgotPassword from '../components/ForgotPassword';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
+import Support from '../pages/Support';
 
 
 
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
+            },
+            {
+                path: "/about",
+                element: <About></About>
+            },
+            {
+                path: "/Contact",
+                element: <Contact></Contact>
+            },
+            {
+                path: "/support",
+                element: <Support></Support>
             },
             {
                 path: "/login",

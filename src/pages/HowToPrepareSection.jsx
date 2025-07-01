@@ -2,7 +2,7 @@ import { FaRunning, FaAppleAlt, FaTint, FaShoePrints } from "react-icons/fa";
 
 const HowToPrepareSection = () => {
   return (
-    <div className="py-16 bg-white px-4 md:px-8 lg:px-20">
+    <div className="py-16  px-4 md:px-8 lg:px-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl font-bold text-blue-500 mb-4">How to Prepare for a Marathon?</h2>
         <p className="text-lg text-gray-600">
