@@ -20,9 +20,9 @@ const About = () => {
         {/* Mission Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <img
-            src="https://i.ibb.co/0DKzgjY/marathon-team.jpg"
+            src="https://i.ibb.co/LDJ5CTwj/4368.jpg"
             alt="Our Mission"
-            className="rounded-2xl shadow-md"
+            className="rounded-2xl shadow-md max-w-full"
           />
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-3">Our Mission</h3>
