@@ -13,7 +13,7 @@ const NotFound = () => {
       />
       <h1 className="text-5xl font-bold text-green-700 mb-4">404 - Page Not Found</h1>
       <p className="text-lg text-gray-600 mb-6">
-        Oops! The plant you're looking for doesn't exist in our garden.
+        Oops! The Marathon you're looking for doesn't exist in our List.
       </p>
       <Link to="/">
         <button className="btn btn-success text-white"><FaRunning className="text-red-500" /> Back to Home</button>
